@@ -172,7 +172,7 @@ color: darkgrey;
 }
 
 /* style di tablet & hp */
-@media screen and(max-width:958px) {
+@media screen and (max-width:958px) {
   nav {
     flex-direction: column;
     padding: 1rem;
@@ -202,6 +202,7 @@ color: darkgrey;
 
   .kiri {
     justify-content: center;
+    text-align: center;
   }
 
   .button a {
@@ -235,6 +236,7 @@ color: darkgrey;
   }
 
   #contact {
+    flex-direction: column;
     padding: 1.5rem;
   }
 }
