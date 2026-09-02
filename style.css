@@ -1,0 +1,274 @@
+/* my font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* global css */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* navbar style */
+nav {
+  background-color: lightgrey;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  font-style: oblique;
+}
+
+.menu a{
+  text-decoration: none;
+  margin:  2rem;
+  color: rgb(66, 65, 65);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+}
+
+/* hero style */
+#hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+.kiri {
+  width: 60%;
+}
+.kanan {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+.kanan img {
+  width: 300px;
+  border-radius: 0 2rem 0 2rem;
+}
+
+.button {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.button a {
+margin-right: 3rem;
+padding: 0.5rem;
+text-decoration: none;
+border: 2px solid black;
+color: darkgrey;
+}
+
+.button a:hover {
+  background-color: white;
+  color: black;
+}
+
+.kiri p {
+  line-height: 1.5;
+}
+
+/* skills section */
+#skills {
+  background-color: lightgray;
+  padding: 5rem;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#skills p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.item img {
+  width: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+}
+
+.item {
+  border: 2px solid grey;
+  width: 30%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+/* testimoni style */
+#testimon {
+  padding: 5rem;
+}
+
+#testimoni h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.profile-image img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.testimoni-card {
+  background-color: whitesmoke;
+  width: 300px;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 7px 17px lightslategray;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: 1.6s;
+  border-radius: 5%;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-20px);
+}
+
+.job {
+  color: darkred;
+}
+
+.message {
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.testimoni-container  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* style di tablet & hp */
+@media screen and(max-width:958px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    margin-top: 0;
+  }
+
+  .menu a{
+    margin: 0rem;
+    font-size: small;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+
+  .kanan, .kiri {
+    width: 100%;
+  }
+
+  .kanan {
+    text-align: center;
+  }
+
+  .kiri {
+    justify-content: center;
+  }
+
+  .button a {
+    margin-right: 0;
+  }
+
+  .button {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #skills {
+    padding: 2rem;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #testimoni {
+    padding: 2rem;
+  }
+
+  #testimon-card {
+    padding: 1.5rem;
+  }
+
+  #contact {
+    padding: 1.5rem;
+  }
+}
+
+/* contact style */
+#contact h1 {
+  padding: rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+
+#contact {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: beige;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.kontak a {
+  margin-right: 3rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  border: 2px solid black;
+  color: rgb(71, 207, 98);
+  border-radius: 5%;
+}
+
+.kontak a:hover {
+  background-color: rgb(237, 231, 231);
+  color: black;
+}
