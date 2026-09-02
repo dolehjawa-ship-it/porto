@@ -239,6 +239,10 @@ color: darkgrey;
     flex-direction: column;
     padding: 1.5rem;
   }
+
+  .kontak a {
+    margin-right: 0;
+  }
 }
 
 /* contact style */
